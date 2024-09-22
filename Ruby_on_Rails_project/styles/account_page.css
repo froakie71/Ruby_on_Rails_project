@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.back-arrow {
+    position: absolute;
+    left: 20px;
+    color: #333;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    max-width: 1200px; /* Keep the max-width */
+    margin: 20px auto; /* Center the content */
+    gap: 40px; /* Add gap between left and right containers */
+}
+
+.left-container, .right-container {
+    flex: 1; /* Allow both containers to take equal space */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 0 10px; /* Adjust as needed for more spacing */
+}
+
+.history-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Increased margin for more spacing */
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+h3 {
+    margin: 0 0 5px 0;
+    color: #444;
+}
+
+p {
+    margin: 0;
+    color: #666;
+}

@@ -1,0 +1,134 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    padding: 20px;
+    background-color: #e0e0e0;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glassy-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+input, button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* Increased gap between cards */
+    width: 90%;
+    max-width: 1100px; /* Slightly increased to accommodate larger gap */
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s;
+    width: 100%;
+}
+
+/* Optional: Reduce card content size slightly */
+.card-details {
+    font-size: 0.95em;
+}
+
+.card-details button {
+    padding: 0.4rem 0.8rem;
+}
+
+.card-image img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: round the image corners */
+}
+
+.card-details {
+    padding: 5px; /* Space inside the card */
+    text-align: center; /* Center text */
+}
+
+.card-details button {
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded button */
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.card-details button:hover {
+    background-color: #45a049; /* Darker button on hover */
+}
